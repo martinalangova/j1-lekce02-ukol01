@@ -34,13 +34,30 @@ public class HlavniProgram {
 
         nakresliOsmiuhelnik(zofka);
 
+        //posun zelvy
+        zofka.penUp();
+        zofka.turnLeft(180);
+        zofka.move(100);
+        zofka.turnLeft(90);
+        zofka.move(50);
+        zofka.penDown();
+        // kolečko
+        nakresliKolecko(zofka);
 
+
+    }
+
+    private void nakresliKolecko(Turtle zofka) {
+        for(int i=0; i<24; i++) {
+            zofka.move(13);
+            zofka.turnRight(15);
+        }
     }
 
     private void nakresliOsmiuhelnik(Turtle zofka) {
         // osmiúhelník
         for(int i=0; i<8; i++) {
-            zofka.move(50);
+            zofka.move(40);
             zofka.turnRight(45);
         }
     }
