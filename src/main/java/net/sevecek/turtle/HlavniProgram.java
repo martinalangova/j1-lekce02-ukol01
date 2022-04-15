@@ -16,15 +16,33 @@ public class HlavniProgram {
         zofka.turnRight(90);
         zofka.move(150);
         zofka.turnRight((90));
-        zofka.move(100);
+        zofka.move(200);
         zofka.turnLeft(90);
         zofka.penDown();
 
         nakresliPrasatko(zofka);
 
+        // 2.část
+
+        //posun zelvy
+        zofka.penUp();
+        zofka.turnLeft(135);
+        zofka.move(400);
+        zofka.turnLeft(90);
+        zofka.move(700);
+        zofka.penDown();
+
+        nakresliOsmiuhelnik(zofka);
 
 
+    }
 
+    private void nakresliOsmiuhelnik(Turtle zofka) {
+        // osmiúhelník
+        for(int i=0; i<8; i++) {
+            zofka.move(50);
+            zofka.turnRight(45);
+        }
     }
 
     private void nakresliPrasatko(Turtle zofka) {
