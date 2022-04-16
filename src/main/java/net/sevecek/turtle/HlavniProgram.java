@@ -53,9 +53,69 @@ public class HlavniProgram {
         zofka.penDown();
 
         //slunce
-        nakresliSlunce(zofka);
+        //nakresliSlunce(zofka);
+
+        // 3.část
+        //posun zelvy
+        zofka.penUp();
+        zofka.turnRight(90);
+        zofka.move(400);
+        zofka.turnRight(90);
+        zofka.move(50);
+        zofka.penDown();
+        zofka.turnLeft(90);
+
+        // domeček
+        nakresliDomecek(zofka);
+
+        //přesun
+        zofka.penUp();
+        zofka.move(200);
+        zofka.turnRight(90);
+        zofka.move(70);
+        zofka.turnRight(90);
+        zofka.penDown();
+
+        nakresliDomecek(zofka);
+
+        //přesun + domečky
+        for (int i=0;i<4;i++) {
+            zofka.penUp();
+            zofka.turnRight(90);
+            zofka.move(250);
+            zofka.turnRight(90);
+            zofka.penDown();
+
+            nakresliDomecek(zofka);
+        }
+
+        //přesun
+        zofka.penUp();
+        zofka.turnRight(90);
+        zofka.move(70);
+        zofka.turnRight(90);
+        zofka.move(200);
+        zofka.penDown();
+
+        nakresliDomecek(zofka);
 
 
+
+
+    }
+
+    private void nakresliDomecek(Turtle zofka) {
+        for (int j=0;j<2;j++) {
+            zofka.move(100);
+            zofka.turnRight(90);
+            zofka.move(70);
+            zofka.turnRight(90);
+        }
+        zofka.turnRight(135);
+        zofka.move(50);
+        zofka.turnLeft(90);
+        zofka.move(50);
+        zofka.turnRight(135);
     }
 
     private void nakresliSlunce(Turtle zofka) {
