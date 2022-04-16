@@ -53,7 +53,7 @@ public class HlavniProgram {
         zofka.penDown();
 
         //slunce
-        //nakresliSlunce(zofka);
+        nakresliSlunce(zofka);
 
         // 3.část
         //posun zelvy
@@ -98,6 +98,8 @@ public class HlavniProgram {
         zofka.penDown();
 
         nakresliDomecek(zofka);
+
+
 
 
 
