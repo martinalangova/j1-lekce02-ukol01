@@ -101,7 +101,6 @@ public class HlavniProgram {
 
 
 
-
     }
 
     private void nakresliDomecek(Turtle zofka) {
