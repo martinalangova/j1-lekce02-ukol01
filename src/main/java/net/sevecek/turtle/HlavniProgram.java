@@ -32,6 +32,7 @@ public class HlavniProgram {
         zofka.move(700);
         zofka.penDown();
 
+        // osmiúhelník
         nakresliOsmiuhelnik(zofka);
 
         //posun zelvy
@@ -44,7 +45,34 @@ public class HlavniProgram {
         // kolečko
         nakresliKolecko(zofka);
 
+        //posun zelvy
+        zofka.penUp();
+        zofka.move(50);
+        zofka.turnRight(90);
+        zofka.move(200);
+        zofka.penDown();
 
+        //slunce
+        nakresliSlunce(zofka);
+
+
+    }
+
+    private void nakresliSlunce(Turtle zofka) {
+        nakresliKolecko(zofka);
+        for(int j=0; j<12; j++){
+            zofka.turnLeft(90);
+            zofka.move(30);
+            zofka.turnLeft(180);
+            zofka.penUp();
+            zofka.move(30);
+            zofka.turnLeft(90);
+            zofka.move(13);
+            zofka.turnRight(15);
+            zofka.move(13);
+            zofka.turnRight(15);
+            zofka.penDown();
+        }
     }
 
     private void nakresliKolecko(Turtle zofka) {
