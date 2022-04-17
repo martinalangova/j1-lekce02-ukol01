@@ -103,7 +103,7 @@ public class HlavniProgram {
         //posun želvy
         zofka.penUp();
         zofka.turnLeft(90);
-        zofka.move(700);
+        zofka.move(500);
         zofka.turnLeft(90);
         zofka.move(250);
         zofka.turnRight(180);
@@ -127,6 +127,8 @@ public class HlavniProgram {
         //N
         nakresliN(zofka);
 
+        //
+        nakresliA(zofka);
     }
 
 
