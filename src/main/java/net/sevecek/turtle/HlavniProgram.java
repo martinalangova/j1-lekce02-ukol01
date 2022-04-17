@@ -33,7 +33,7 @@ public class HlavniProgram {
         zofka.penDown();
 
         // osmiúhelník
-        nakresliOsmiuhelnik(zofka);
+       // nakresliOsmiuhelnik(zofka);
 
         //posun zelvy
         zofka.penUp();
@@ -43,7 +43,7 @@ public class HlavniProgram {
         zofka.move(50);
         zofka.penDown();
         // kolečko
-        nakresliKolecko(zofka);
+       // nakresliKolecko(zofka);
 
         //posun zelvy
         zofka.penUp();
@@ -98,7 +98,6 @@ public class HlavniProgram {
         zofka.penDown();
 
         nakresliDomecek(zofka);
-
 
 
 
