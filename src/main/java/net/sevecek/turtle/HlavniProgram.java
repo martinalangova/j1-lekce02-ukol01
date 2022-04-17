@@ -118,9 +118,31 @@ public class HlavniProgram {
         //R
         nakresliR(zofka);
 
+        //T
+        nakresliT(zofka);
 
 
+    }
 
+    private void nakresliT(Turtle zofka) {
+        zofka.move(50);
+        zofka.turnLeft(90);
+        zofka.penUp();
+        zofka.move(20);
+        zofka.turnRight(180);
+        zofka.penDown();
+        zofka.move(40);
+        zofka.turnRight(180);
+        zofka.penUp();
+        zofka.move(20);
+        zofka.turnLeft(90);
+        zofka.move(50);
+        //mezera
+        zofka.penUp();
+        zofka.turnLeft(90);
+        zofka.move(40);
+        zofka.penDown();
+        zofka.turnLeft(90);
     }
 
     private void nakresliR(Turtle zofka) {
