@@ -99,9 +99,37 @@ public class HlavniProgram {
 
         nakresliDomecek(zofka);
 
+// 4.část
+        //posun želvy
+        zofka.penUp();
+        zofka.turnLeft(90);
+        zofka.move(700);
+        zofka.turnLeft(90);
+        zofka.move(250);
+        zofka.turnRight(180);
+        zofka.penDown();
+
+        // M
+        nakresliM(zofka);
 
 
 
+    }
+
+    private void nakresliM(Turtle zofka) {
+        zofka.move(50);
+        zofka.turnRight(135);
+        zofka.move(25);
+        zofka.turnLeft(90);
+        zofka.move(25);
+        zofka.turnRight(135);
+        zofka.move(50);
+        //mezera
+        zofka.penUp();
+        zofka.turnLeft(90);
+        zofka.move(40);
+        zofka.penDown();
+        zofka.turnLeft(90);
     }
 
     private void nakresliDomecek(Turtle zofka) {
